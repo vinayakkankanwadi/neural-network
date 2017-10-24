@@ -57,6 +57,12 @@ class Add(Node):
 
         Your code here!
         """
+        for n in self.inbound_nodes:
+            #print n.value
+            if self.value == None :
+                self.value =n.value
+            else:
+                self.value+=n.value
 
 
 """
